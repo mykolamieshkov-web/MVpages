@@ -1,0 +1,238 @@
+/*Обнуление*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   font-family: 'Montserrat', sans-serif;
+   color: #AEC2E4;
+   background: #252525;
+   scroll-behavior: smooth;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+img{vertical-align: top;
+   max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+.header {
+   font-family: 'Roboto', sans-serif;
+   color: #EBF4F7;
+   font-size: 36px;
+   text-align: center;
+}
+.text {
+   font-size: 20px;
+   list-style: 24px;
+   color: #EBF4F7;
+   padding: 5px;
+   margin: 15px;
+}
+ul{
+  list-style-image:  url("../img/icons/tick.png");
+  margin-left: 50px;
+}
+.button {
+   color: #EBF4F7;
+   background: #AEC2E4;
+   padding: 15px 10px 15px 10px;
+   height: 40px;
+   border: 3px solid #1B03A3;
+   border-radius: 15px;
+   max-width: 165px;
+   max-height: 48px;
+   text-align: center;
+   
+  
+}
+.button:hover {
+   background-color: #1B03A3;
+   border: #252525;
+
+   transition: background-color 0.3s all ;
+}
+@media (max-width: 500px) {
+   .header {
+      font-size: 22px;
+   }
+   .text {
+      font-size: 16px;
+   }
+}
+.wrapper {
+   min-height: 100%;
+   height: 100vh;
+   width: 100vw;
+ 
+}
+.footer {
+   bottom: 0;
+   left: 0;
+   position: fixed;
+   background-color: #1B03A3;
+   text-align: center;
+   width: 100%;
+   height: 350px;
+}
+.nav {
+width: 100%;
+height: 60px;
+padding-top: 0;
+background: #1B03A3;
+display: flex;
+gap: 15px;
+justify-content: space-evenly;
+
+}
+.logo {
+   max-height:60px;
+   width: 70px;
+   filter: drop-shadow(4px 4px 4px #EBF4F7);
+
+}
+.nav_links {
+display: flex;
+gap:15px;
+margin-top: 20px;
+}
+.nav_links a {
+color: #EBF4F7;
+height: 20px;
+}
+.nav_links a:hover {
+   box-shadow: 0 0 5px 0 #ccc;
+   transition: box-shadow 3ms all;
+}
+
+.footer {
+bottom: 0;
+left: 0;
+position: fixed;
+width: 100%;
+height: 35px;
+background: #252525;
+}
+.message {
+   width: 100%;
+   height: 100vh;
+   background: url("../img/bg/bg.png");
+   background-repeat: no-repeat;
+   background-position: center ;
+   background-size:cover;
+   padding-top: 30px;
+   display: block;
+   margin: 0 auto;
+}
+.message img {
+   width: 680px;
+   height: 420px;
+   border-radius: 15px;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  box-shadow: 5px 8px #252525;
+  border: none;
+  border-radius: 25px;
+
+
+}
+
+@media (max-width: 500px) {
+.message img {
+ width: 480px;
+ height: 320px;  
+}
+.wrapper {
+   max-width: 500px;
+}
+}
+.services {
+   width: 100%;
+   height: 380px;
+   background-color:#252525;
+}
+.services_content {
+   display: flex;
+   justify-content: space-between;
+   justify-self: center;
+   gap: 10px;
+   padding-top: 15px;
+}
+
+@media (max-width: 500px) {
+   .services_content {
+      display: block;
+      padding: 15px;
+   }}
+   img.icon {
+      width: 16px;
+      height: 16px;
+      box-shadow: none;
+      padding: 0;
+      border-radius: none;
+      border: none;
+      float: right ;
+   }
+   .contact {
+      width: 100%;
+      height: 600px;
+      background: #252525;
+      padding-top:120px;
+     
+   }
+   .contact_content {
+      display: flex;
+      gap: 2px;
+   }
+   .contact_content img {
+      width: fit-content;
+      height: fit-content;
+   }
+   .contact iframe {
+      background-color: #1B03A3;
+      box-shadow: 8px 8px gray;
+      margin-top: 30px;
+      margin-left: 100px;
+   }
+
+@media (max-width: 500px) {
+   .contact iframe {
+      width: 80%;
+      height: 80%;
+      padding: 35px;
+      margin: 0 auto;
+      
+   }}
+   .contact_btn {
+      width: 100%;
+      height: 150px;
+   }
